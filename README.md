@@ -8,7 +8,7 @@
 
 ### 2. Ejecutar:
 
-> [!NOTE]
+> [!IMPORTANT]
 > Para ejecutar el proyecto es necesario hacerlo por consola, para que Gradle pueda cargar los plugins de JavaFX
 
 Ejecutamos el siguiente comando:
@@ -32,7 +32,7 @@ Dentro de esta clase se podrán encontrar los métodos:
 
 Cada uno respectivamente cumple las indicaciones del **Caso Práctico 1**
 
-> [!INFO]
+> [!NOTE]
 > En la pestaña **ALUMNOS** dentro de la aplicación se podrán ver diferentes formas de interactuar y ver la información
 > Entre ellas:
 >  - Agregar nuevo alumno
