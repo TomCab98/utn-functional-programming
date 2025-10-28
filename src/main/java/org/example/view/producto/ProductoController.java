@@ -23,32 +23,46 @@ public class ProductoController {
 
   private final ProductoServicio productoServicio = new ProductoServicio();
   private final ObservableList<Producto> listaObservable = FXCollections.observableArrayList();
+
   @FXML
   public Label infoEstadisticas;
+
   @FXML
   private TableView<Producto> tablaProductos;
+
   @FXML
   private TableView<DTOCategoriaStock> tablaPromedios = new TableView<>();
+
   @FXML
   private AnchorPane contenedorTablas;
+
   @FXML
   private TableColumn<Producto, String> colCodigo;
+
   @FXML
   private TableColumn<Producto, String> colNombre;
+
   @FXML
   private TableColumn<Producto, String> colPrecio;
+
   @FXML
   private TableColumn<Producto, Integer> colStock;
+
   @FXML
   private TableColumn<Producto, CategoriaProducto> colCategoria;
+
   @FXML
   private TextField txtCodigo;
+
   @FXML
   private TextField txtNombre;
+
   @FXML
   private TextField txtPrecio;
+
   @FXML
   private TextField txtStock;
+
   @FXML
   private ComboBox<CategoriaProducto> comboCategoria;
 

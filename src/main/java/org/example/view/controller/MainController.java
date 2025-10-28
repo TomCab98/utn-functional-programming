@@ -35,4 +35,28 @@ public class MainController {
       e.printStackTrace();
     }
   }
+
+  @FXML
+  private void onMostrarLibros() {
+    try {
+      Node vistaLibros = FXMLLoader.load(
+          Objects.requireNonNull(getClass().getResource("/fxml/libro.fxml"))
+      );
+      contenidoCentral.getChildren().setAll(vistaLibros);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  @FXML
+  private void onMostrarEmpleados() {
+    try {
+      Node vistaLibros = FXMLLoader.load(
+          Objects.requireNonNull(getClass().getResource("/fxml/empleado.fxml"))
+      );
+      contenidoCentral.getChildren().setAll(vistaLibros);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 }

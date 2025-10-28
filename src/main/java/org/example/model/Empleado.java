@@ -1,5 +1,14 @@
 package org.example.model;
 
-public class Empleado {
+import lombok.Builder;
+import lombok.Data;
 
+@Data
+@Builder
+public class Empleado {
+  private final String legajo;
+  private String nombre;
+  private String departamento;
+  private double salario;
+  private int edad;
 }

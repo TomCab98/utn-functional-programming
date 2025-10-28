@@ -13,14 +13,14 @@
         onAction="#onMostrarAlumnos"
         style="-fx-background-color: #2b6cb0; -fx-text-fill: white; -fx-font-weight: bold;"/>
       <Button text="📚 Libros"
-        disable="true"
-        style="-fx-background-color: #4a5568; -fx-text-fill: white; -fx-font-weight: bold;"/>
+        onAction="#onMostrarLibros"
+        style="-fx-background-color: #2b6cb0; -fx-text-fill: white; -fx-font-weight: bold;"/>
       <Button text="🧾 Productos"
         onAction="#onMostrarProductos"
         style="-fx-background-color: #2b6cb0; -fx-text-fill: white; -fx-font-weight: bold;"/>
       <Button text="👨‍💼 Empleados"
-        disable="true"
-        style="-fx-background-color: #4a5568; -fx-text-fill: white;"/>
+        onAction="#onMostrarEmpleados"
+        style="-fx-background-color: #2b6cb0; -fx-text-fill: white;"/>
     </ToolBar>
   </top>
 
