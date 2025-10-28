@@ -1,5 +1,14 @@
 package org.example.model;
 
-public class Libro {
+import lombok.Builder;
+import lombok.Data;
 
+@Data
+@Builder
+public class Libro {
+  private final String codigo;
+  private String titulo;
+  private String autor;
+  private int paginas;
+  private double precio;
 }

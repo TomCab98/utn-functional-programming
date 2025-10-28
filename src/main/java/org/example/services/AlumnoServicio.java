@@ -49,7 +49,7 @@ public class AlumnoServicio {
         .collect(Collectors.averagingInt(Alumno::getNota));
   }
 
-        public List<Alumno> obtenerTresMejores() {
+  public List<Alumno> obtenerTresMejores() {
     return alumnos.stream()
         .sorted(Comparator.comparingInt(Alumno::getNota).reversed())
         .limit(3)

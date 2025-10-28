@@ -23,4 +23,16 @@ public class MainController {
       e.printStackTrace();
     }
   }
+
+  @FXML
+  private void onMostrarProductos() {
+    try {
+      Node vistaProductos = FXMLLoader.load(
+          Objects.requireNonNull(getClass().getResource("/fxml/producto.fxml"))
+      );
+      contenidoCentral.getChildren().setAll(vistaProductos);
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 }
